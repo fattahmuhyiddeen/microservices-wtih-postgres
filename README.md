@@ -2,6 +2,11 @@ https://github.com/v1bh0r/spring-boot-local-dev-docker/?tab=readme-ov-file
 
 https://github.com/v1bh0r/spring-boot-local-dev-docker/
 
+## Running Jenkins
+```bash
+docker run --name myjenkins -p 8080:8080 -p 50001:50001 --restart=on-failure --env JENKINS_SLAVE_AGENT_PORT=50001 jenkins/jenkins:lts-jdk17
+```
+
 # Demo App - Spring Boot Local Development on Docker
 
 ## Getting Started
