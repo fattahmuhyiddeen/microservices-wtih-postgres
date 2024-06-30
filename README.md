@@ -10,12 +10,11 @@ https://github.com/v1bh0r/spring-boot-local-dev-docker/
 
 ### Build and Run the code
 ```bash
-docker-compose build
-docker-compose up
+docker-compose up --build
 ```
 
 ### Test
-On visiting [http://localhost:8080/api/](http://localhost:8080/api/) in your browser
+On visiting [http://localhost:8050/api/](http://localhost:8050/api/) in your browser
 
 You should see "Hello Human"
 
@@ -25,7 +24,7 @@ Chrome by installing [LiveReload plugin](https://chrome.google.com/webstore/deta
 #### Test Database persistence
 ##### Create a record
 ```bash
-curl --location --request POST 'http://localhost:8080/api/employees/' \
+curl --location --request POST 'http://localhost:8050/api/employees/' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "name": "John Doe"
@@ -33,7 +32,7 @@ curl --location --request POST 'http://localhost:8080/api/employees/' \
 ```
 ##### List all records
 ```bash
-curl http://localhost:8080/api/employees/
+curl http://localhost:8050/api/employees/
 ```
 
 ## Reference Documentation

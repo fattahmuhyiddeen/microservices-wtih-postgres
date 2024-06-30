@@ -13,7 +13,7 @@ services:
       PG_HOST: db
       PG_PASS: mydbpassword
     ports:
-      - 8080:8080
+      - 8030-8050:8080
       - 35729:35729
       - 5005:5005
     depends_on:

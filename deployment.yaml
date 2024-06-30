@@ -47,7 +47,7 @@ spec:
             initialDelaySeconds: 80
           ports:
             - name: http
-              containerPort: 8080
+              containerPort: 8050
               protocol: TCP
 
 ---
@@ -65,4 +65,4 @@ spec:
     - name: http
       protocol: TCP
       port: 3000
-      targetPort: 8080
+      targetPort: 8050
